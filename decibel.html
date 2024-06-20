@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decibel Meter</title>
+    <link rel="stylesheet" href="decibel.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Decibel Meter</h1>
+        <p>Place your microphone near the sound source. Click below to start measuring decibels.</p>
+        <h3>Sound Measurement with Decibels</h3>
+    <p>In sound measurement, decibels (dB) quantify sound intensity relative to a reference level.</p>
+    <p>For instance, common reference level is standard air pressure 1 Pascal (Pa)</p>
+    <p>Practically, this reference can vary based on some factors (e.g- microphone sensitivity, calibration).</p>
+    <p>The formula <code>dB = 20 * log10 (averageVolume / reference)</code> estimates dB based on the average volume received from your microphone. </p>
+    <p><b>Note:</b> This provides a simplified view. Real-world applications may require adjustments for accuracy.</p>
+        <button id="startButton">Start</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="decibel.js"></script>
+</body>
+</html>
